@@ -10,3 +10,11 @@ Code languages: Python with the OOP programming paradigm and GUI in Hebrew (In c
 </p>
 
 ---
+
+### Customer Requirements
+
+<p>
+    Customer order management software with a graphical interface in Hebrew and option to create a dynamic order report in Excel format
+</p>
+
+# 
