@@ -30,7 +30,7 @@ I only uploaded a part of the code!
 ![תמונה של WhatsApp‏ 2024-03-18 בשעה 13 39 11_64c4eee6](https://github.com/YakirNissim/Irlen-Israel-Project/assets/101890349/9fa3fe0d-83e9-4b93-90f9-6cb6ec66e086)
 
 
-[Software Design.pdf](https://github.com/YakirNissim/Irlen-Israel-Project/files/14635669/Software.Design.pdf)
+# <a href='https://github.com/YakirNissim/Irlen-Israel-Project/blob/master/Software%20Design.pdf'>Software Design link</a>
 
 ## QA results
 ![TestModules](https://github.com/YakirNissim/Irlen-Israel-Project/assets/101890349/b27a6d06-3d9f-4a72-8098-2002cfdef1ef)
@@ -52,4 +52,4 @@ I only uploaded a part of the code!
 
 ## The language file
 ![Language file](https://github.com/YakirNissim/Irlen-Israel-Project/assets/101890349/0babcba0-89d2-40be-b570-0127a744c034)
-
+# <a href='https://github.com/YakirNissim/Irlen-Israel-Project/blob/master/Language%20file.csv'>language file link</a>
