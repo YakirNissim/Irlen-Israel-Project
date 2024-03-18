@@ -1,0 +1,68 @@
+﻿keys,English,Hebrew
+Language,English,Hebrew
+justify,left,right
+Username,Username,שם משתמש
+Password,Password,סיסמה
+Sign in,Sign in,התחברות
+Create New Account,Create new account,צור חשבון חדש
+Create an unsecured account,Create an unsecured account,צור חשבון לא מאובטח
+Confirm password,Confirm password,אימות סיסמה
+Create account,Create account,צור חשבון
+Back,Back,חזור
+Adding a new customer,Adding a new customer,הוספת לקוח חדש
+Customer search,Customer search,חיפוש לקוח
+Edit security data,Edit security data,עריכת נתוני אבטחה
+Sign out,Sign out,התנתק
+Welcome,Welcome,ברוך הבאה
+First name,First name,שם פרטי
+Last name,Last name,שם משפחה
+Parents name,Parents name,שם הורים
+Phone number,Phone number,טלפון
+Address?,Address,כתובת מגורים
+City,City,עיר
+Street,Street,רחוב
+Building number,Building number,מספר בניין
+Apartment,Apartment,דירה
+ZIP code,ZIP code,מיקוד
+Email,Email,כתובת מייל
+Referred by,Referred by,"הופנה ע""י"
+Reason for referral,Reason for referral,סיבת הפניה
+Add a customer,Add a customer,הוסף לקוח
+Customer search,Customer search,חיפוש לקוח
+the customer's name,the customer's name,שם הלקוח
+Search,Search,חפש
+Profile,Profile,פרופיל
+Adding a new order,Adding a new order,הוספת הזמנה חדשה
+Order search,Order search,חיפוש הזמנה קיימת
+Order report,Order report,דוח הזמנות
+Edit Profile,Edit Profile,עריכת פרופיל
+Customer profile,Customer profile,פרופיל לקוח
+OK,OK,אישור
+Language.w,Language,שפה
+Setting,Setting,הגדרות
+Update,Update,עדכון
+,,
+,,
+Note,Note,הערה
+Warning,Warning,אזהרה
+Notice,Notice,שם לב
+,,
+Message 1,"The username or password you entered was incorrect, please try again",שם המשתמש או הסיסמה שהזנת היו שגועים בבקשה נסה שנית
+Message 2,"Again the username or password you entered was incorrect,#if you fail again the station will close!","שב שם המשתש או הסיסמה שהזנתה היו שגועים, #אם תקשל שוב התוחנה תסגר!"
+Message 3,"Are you sure you want to create an unsecured account?#For your information, you can always add a password later!","האם אתה בטוח שברצונך ליצור חשבון לא מאובטח?#לידיעתך, תמיד תוכל להוסיף סיסמה מאוחר יותר!"
+Message 4,You must enter a password!#If you want to create an account without a password please select ,עליך להזין סיסמה!#אם ברצונך ליצור חשבון ללא סיסמה אנא בחר#ב- 
+Message 5,Password and Confirm Password does not match!,הסיסמה ואימות הסיסמה אינם תואמים!
+Message 6,"Sorry, the selected username is already in use. #Please choose a different username.","מצטערים, שם המשתמש שנבחר כבר בשימוש.#אנא בחר בשם משתמש אחר."
+Message 7,"Sorry, but there is a customer with a similar name.#Please choose a different name for the customer.","מצטערים, אבל קיים לקוח בשם דומה.#אנא בחר שם אחר עבור הלקוח."
+Message 8,Each customer must include a first and last name!,כל לקוח חייב לכלול שם פרטי ושם משפחה!
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
