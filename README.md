@@ -47,8 +47,7 @@ I only uploaded a part of the code!
 ![צילום מסך 2024-03-18 130449](https://github.com/YakirNissim/Irlen-Israel-Project/assets/101890349/64c7a2d8-2654-488f-abf9-fcb05a7098ec)
 ![צילום מסך 2024-03-18 125940](https://github.com/YakirNissim/Irlen-Israel-Project/assets/101890349/0a5c23de-144e-4dc7-88eb-bf48509293a1)
 ![צילום מסך 2024-03-18 125803](https://github.com/YakirNissim/Irlen-Israel-Project/assets/101890349/3c2207bf-e778-471e-8fd2-03bf837c1e52)
-
-
+--
 
 
 ## The language file
