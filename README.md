@@ -32,6 +32,8 @@ I only uploaded a part of the code!
 
 # <a href='https://github.com/YakirNissim/Irlen-Israel-Project/blob/master/Software%20Design.pdf'>Software Design link</a>
 
+## Exceptions
+  
 ## QA results
 ![TestModules](https://github.com/YakirNissim/Irlen-Israel-Project/assets/101890349/b27a6d06-3d9f-4a72-8098-2002cfdef1ef)
 
