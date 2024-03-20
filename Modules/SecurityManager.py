@@ -1,4 +1,4 @@
-from Modules.ExceptionsAndGlobalFunctions import *
+from Modules.Exceptions import *
 import pickle
 from Modules.CustomerManager import CustomerManager
 import os
