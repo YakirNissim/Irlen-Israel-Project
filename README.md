@@ -33,7 +33,9 @@ I only uploaded a part of the code!
 # <a href='https://github.com/YakirNissim/Irlen-Israel-Project/blob/master/Software%20Design.pdf'>Software Design link</a>
 
 ## Exceptions
-  
+https://github.com/YakirNissim/Irlen-Israel-Project/blob/faac18323cd744fb064b4bd208b2667833d8b936/README/List%20of%20ExceptionsClass.py#L1-L10  
+# <a href='https://github.com/YakirNissim/Irlen-Israel-Project/blob/master/Modules/Exceptions.py'>Click to view the full Exceptions module</a>
+
 ## QA results
 ![TestModules](https://github.com/YakirNissim/Irlen-Israel-Project/assets/101890349/b27a6d06-3d9f-4a72-8098-2002cfdef1ef)
 
