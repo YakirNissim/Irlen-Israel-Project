@@ -3,10 +3,6 @@ from Modules.OrdersManager import OrdersManager
 
 
 class Customer:
-    # set profile format:
-    __list_profile_keys = ["first name", "last name", "parent name", "phone", 'City', 'Street', 'Building number',
-                           'Apartment', 'ZIP code', "Email", "referred by", "reason for referral"]
-    __list_profile_values_type = [type(None), str]
     
     # public methods:
     def __init__(self, profile):
@@ -37,6 +33,11 @@ class Customer:
 
 
 class CustomerManager:
+    # set profile format:
+    __list_profile_keys = ["first name", "last name", "parent name", "phone", 'City', 'Street', 'Building number',
+                           'Apartment', 'ZIP code', "Email", "referred by", "reason for referral"]
+    __list_profile_values_type = [type(None), str]
+    
     # public methods:
     def __init__(self, username=None):
         """ values in list_customer is - (customer_name, Customer Object) """
