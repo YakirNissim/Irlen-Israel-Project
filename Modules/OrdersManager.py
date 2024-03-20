@@ -1,4 +1,4 @@
-from Modules.ExceptionsAndGlobalFunctions import *
+from Modules.Exceptions import *
 
 
 class Prescription:
