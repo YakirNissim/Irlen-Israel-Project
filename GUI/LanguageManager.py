@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import pickle
-from Modules.ExceptionsAndGlobalFunctions import *
+from Modules.Exceptions import *
 
 PathRecovery = r"Modules\GUI\Data"
 FileRecovery = r'language_key.data'
