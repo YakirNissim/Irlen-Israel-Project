@@ -5,10 +5,10 @@ class PrescriptionTypeError(TypeError):
 
 
 class EPreTypeError(TypeError):
-    def __init__(self, EPre, list_correct_EPre_keys, list_EPre_values):
+    def __init__(self, EPre, list_correct_EPre_keys, list_EPre_values_type):
         self.__EPre = EPre
         self.__EPre_keys = list_correct_EPre_keys
-        self.__EPre_values = list_EPre_values
+        self.__EPre_values_type = list_EPre_values_type
 
     def __str__(self):
         str_ret = f"The entered data does not match the EPre format!\n"
@@ -17,19 +17,19 @@ class EPreTypeError(TypeError):
                        f"\n\tOne of the values is of {type(self.__EPre)} type\n"
         else:
             str_ret += f"\tcorrect items is:\n"
-            for item in map(lambda k, v=self.__EPre_values: (k, v), self.__EPre_keys):
-                str_ret += f"\t\t{item[0]} => {type(item[1][0])} or {type(item[1][1])}\n"
+            for item in map(lambda k, v=self.__EPre_values_type: (k, v), self.__EPre_keys):
+                str_ret += f"\t\t{item[0]} => type is: {item[1][0]} or {item[1][1]}\n"
             str_ret += f"\tvalue items is:\n"
             for item in self.__EPre.items():
                 str_ret += f"\t\t{item[0]} => {type(item[1])}\n"
         return str_ret
 
 
-class DeliveryAddress(TypeError):
-    def __init__(self, delivery_address, list_correct_delivery_address_keys, list_delivery_address_values):
+class DeliveryAddressFormat(TypeError):
+    def __init__(self, delivery_address, list_correct_delivery_address_keys, list_delivery_address_values_type):
         self.__delivery_address = delivery_address
         self.__delivery_address_keys = list_correct_delivery_address_keys
-        self.__delivery_address_values = list_delivery_address_values
+        self.__delivery_address_values_type = list_delivery_address_values_type
 
     def __str__(self):
         str_ret = f"The entered data does not match the DeliveryAddress format!\n"
@@ -38,8 +38,8 @@ class DeliveryAddress(TypeError):
                        f"\n\tDeliveryAddress type is {type(self.__delivery_address)}\n"
         else:
             str_ret += f"\tcorrect items is:\n"
-            for item in map(lambda k, v=self.__delivery_address_values: (k, v), self.__delivery_address_keys):
-                str_ret += f"\t\t{item[0]} => {type(item[1][0])} or {type(item[1][1])}\n"
+            for item in map(lambda k, v=self.__delivery_address_values_type: (k, v), self.__delivery_address_keys):
+                str_ret += f"\t\t{item[0]} => type is: {item[1][0]} or {item[1][1]}\n"
             str_ret += f"\tDeliveryAddress items is:\n"
             for item in self.__delivery_address.items():
                 str_ret += f"\t\t{item[0]} => {type(item[1])}\n"
@@ -73,10 +73,10 @@ class PrescriptionListTypeError(ValueError):
 
 
 class ProfileError(Exception):
-    def __init__(self, profile, list_correct_profile_keys, list_profile_values):
+    def __init__(self, profile, list_correct_profile_keys, list_profile_values_type):
         self.__profile = profile
         self.__profile_keys = list_correct_profile_keys
-        self.__profile_values = list_profile_values
+        self.__profile_values_type = list_profile_values_type
 
     def __str__(self):
         str_ret = f"The entered data does not match the profile format!\n"
@@ -84,11 +84,11 @@ class ProfileError(Exception):
             str_ret += f"\tcorrect type is - <class 'dict'>\n\tprofile type is {type(self.__profile)}\n"
         else:
             str_ret += f"\tcorrect items is:\n"
-            for item in map(lambda k, v=self.__profile_values: (k, v), self.__profile_keys):
+            for item in map(lambda k, v=self.__profile_values_type: (k, v), self.__profile_keys):
                 if item[0] in ["first name", "last name"]:
-                    str_ret += f"\t\t{item[0]} => {type(item[1][1])}\n"
+                    str_ret += f"\t\t{item[0]} => type is: {item[1][1]}\n"
                     continue
-                str_ret += f"\t\t{item[0]} => {type(item[1][0])} or {type(item[1][1])}\n"
+                str_ret += f"\t\t{item[0]} => type is: {item[1][0]} or {item[1][1]}\n"
             str_ret += f"\tprofile items is:\n"
             for item in self.__profile.items():
                 str_ret += f"\t\t{item[0]} => {type(item[1])}\n"
