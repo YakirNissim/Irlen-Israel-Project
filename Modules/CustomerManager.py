@@ -3,6 +3,11 @@ from Modules.OrdersManager import OrdersManager
 
 
 class Customer:
+    # set profile format:
+    __list_profile_keys = ["first name", "last name", "parent name", "phone", 'City', 'Street', 'Building number',
+                           'Apartment', 'ZIP code', "Email", "referred by", "reason for referral"]
+    __list_profile_values_type = [type(None), str]
+    
     # public methods:
     def __init__(self, profile):
         self.repr_name = profile["first name"] + " " + profile["last name"]
@@ -99,21 +104,18 @@ class CustomerManager:
         return None
 
     # private methods:
-    @staticmethod
-    def __check_profile_dictionary(profile):
-        list_profile_keys = ["first name", "last name", "parent name", "phone", 'City', 'Street', 'Building number',
-                             'Apartment', 'ZIP code', "Email", "referred by", "reason for referral"]
-        list_profile_values = [None, ""]
+     @classmethod
+    def __check_profile_dictionary(cls, profile):
         if type(profile) is not dict:
-            raise ProfileError(profile, list_profile_keys, list_profile_values)
-        for key in list_profile_keys:
+            raise ProfileError(profile, cls.__list_profile_keys, cls.__list_profile_values_type)
+        for key in cls.__list_profile_keys:
             if key not in profile.keys():
-                raise ProfileError(profile, list_profile_keys, list_profile_values)
+                raise ProfileError(profile, cls.__list_profile_keys, cls.__list_profile_values_type)
         for value in profile.values():
             if value is not None and type(value) is not str:
-                raise ProfileError(profile, list_profile_keys, list_profile_values)
+                raise ProfileError(profile, cls.__list_profile_keys, cls.__list_profile_values_type)
         if profile["first name"] is None or profile["last name"] is None:
-            raise ProfileError(profile, list_profile_keys, list_profile_values)
+            raise ProfileError(profile, cls.__list_profile_keys, cls.__list_profile_values_type)
 
     def __search_customer(self, customer_name):
         date_list = self.list_customers()

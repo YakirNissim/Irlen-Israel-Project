@@ -21,6 +21,14 @@ class Prescription:
         AddOS = {'Sphere': None, 'Cylinder': None, 'Axis': None, 'Prism': None, 'Base': None}
 
     """
+    
+    # set Prescription format:
+    __list_PrescriptionData_keys = ['Patient Name', 'Expiration Date', 'Pupillary Distance', 'Prescribed by']
+    __list_lenses_keys = ['Sphere', 'Cylinder', 'Axis', 'Prism', 'Base']
+    __list_DeliveryAddress_keys = ['City', 'Street', 'Building number', 'Apartment', 'ZIP code']
+    __list_DeliveryAddress_values_type = __list_PrescriptionData_values_type = __list_Lenses_values_type = \
+        [type(None), str]
+    
     # public methods:
     def __init__(self,
                  irlen_pre: str,
@@ -61,38 +69,39 @@ class Prescription:
                self.__delivery_address, self.__payment_methods, self.__extras, self.__report_on_improvement
 
 
-    @staticmethod
-    def __check_EPre_format(e_pre):
+    @classmethod
+    def __check_EPre_format(cls, e_pre):
         print(f'e_pre = {e_pre}')
-        list_PrescriptionData_keys = ['Patient Name', 'Expiration Date', 'Pupillary Distance', 'Prescribed by']
-        list_lenses_keys = ['Sphere', 'Cylinder', 'Axis', 'Prism', 'Base']
-        list_values = [None, ""]
         if type(e_pre) != list:     raise TypeError('"EPre" is of type list')
         for i in range(len(e_pre)):
-            if i == 0:  list_keys = list_PrescriptionData_keys
-            else:   list_keys = list_lenses_keys
+            if i == 0:
+                list_keys = cls.__list_PrescriptionData_keys
+                list_values_type = cls.__list_PrescriptionData_values_type
+            else:
+                list_keys = cls.__list_lenses_keys
+                list_values_type = cls.__list_Lenses_values_type
 
             if type(e_pre[i]) is not dict:
-                raise EPreTypeError(e_pre[i], list_keys, list_values)
+                raise EPreTypeError(e_pre[i], list_keys, list_values_type)
             for key in list_keys:
                 if key not in e_pre[i].keys():
-                    raise EPreTypeError(e_pre[i], list_keys, list_values)
+                    raise EPreTypeError(e_pre[i], list_keys, list_values_type)
             for value in e_pre[i].values():
                 if value is not None and type(value) is not str:
-                    raise EPreTypeError(e_pre[i], list_keys, list_values)
+                    raise EPreTypeError(e_pre[i], list_keys, list_values_type)
 
-    @staticmethod
-    def __check_DeliveryAddress_format(delivery_address):
-        list_DeliveryAddress_keys = ['City', 'Street', 'Building number', 'Apartment', 'ZIP code']
-        list_values = [None, ""]
+    @classmethod
+    def __check_DeliveryAddress_format(cls, delivery_address):
+        list_DeliveryAddress_keys = cls.__list_DeliveryAddress_keys
+        list_values_type = cls.__list_DeliveryAddress_values_type
         if type(delivery_address) is not dict:
-            raise DeliveryAddress(delivery_address, list_DeliveryAddress_keys, list_values)
+            raise DeliveryAddressFormat(delivery_address, list_DeliveryAddress_keys, list_values_type)
         for key in list_DeliveryAddress_keys:
             if key not in delivery_address.keys():
-                raise DeliveryAddress(delivery_address, list_DeliveryAddress_keys, list_values)
+                raise DeliveryAddressFormat(delivery_address, list_DeliveryAddress_keys, list_values_type)
         for value in delivery_address.values():
             if value is not None and type(value) is not str:
-                raise DeliveryAddress(delivery_address, list_DeliveryAddress_keys, list_values)
+                raise DeliveryAddressFormat(delivery_address, list_DeliveryAddress_keys, list_values_type)
 
 
 class Order:
