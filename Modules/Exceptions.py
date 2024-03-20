@@ -109,8 +109,3 @@ class DeveloperKeyError(ValueError):
 class LanguageFileError(FileNotFoundError):
     def __str__(self):
         return 'The "Language file" was not found!'
-
-
-#   Global Functions
-def date_to_string(date):
-    return f'{date[0]}/{date[1]}/20{str(date[2]).zfill(2)}'
