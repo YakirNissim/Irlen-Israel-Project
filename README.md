@@ -6,7 +6,7 @@ Code languages: Python with the OOP programming paradigm and GUI in Hebrew and E
 ---
 ## Note
 * I only uploaded a part of the code!
-* There is a separation between the different files and objects, the header files ( __init\__.py ) are not included in the files I uploaded because the files are concentrated in one folder and not in their packages to make it easier to cross and link between files. 🔍
+* There is a separation between the different files and objects, **the header files ( __init\__.py ) are not included** in the files I uploaded because the files are concentrated in one folder and not in their packages to make it easier to cross and link between files. 🔍
 
 ---
 # Shulamit
