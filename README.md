@@ -5,7 +5,8 @@ Code languages: Python with the OOP programming paradigm and GUI in Hebrew and E
 * The languages are loaded from a CSV file and the languages can be expanded without changing the code.
 ---
 ## Note
-I only uploaded a part of the code!
+* I only uploaded a part of the code!
+* There is a separation between the different files and objects, the header files ( __init\__.py ) are not included in the files I uploaded because the files are concentrated in one folder and not in their packages to make it easier to cross and link between files. 🔍
 
 ---
 # Shulamit
